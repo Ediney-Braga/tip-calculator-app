@@ -26,7 +26,7 @@ tips.forEach((button) => {
 
 
 function billFunction (){
-    billValue = parseFloat(bill.value);
+    billValue =parseFloat(bill.value);
     calcular();
 }
 
@@ -36,8 +36,8 @@ function peopleFunction (){
         p.classList.add("msgError");
         people.classList.add("inputError");
     }else {
-        people.classList.add("inputError");
         p.classList.remove("msgError");
+        people.classList.remove("inputError");
         peopleValue = parseFloat(people.value);
         calcular();
     }
@@ -67,7 +67,8 @@ function resetFunction (){
     total.innerText = "$0.00";
     bill.value = "";
     custom.value = "";
-    people.value = "";
+    people.value = "1";
+    peopleFunction();
     billValue = 0.00;
     peopleValue = "";
     customvalue = "";

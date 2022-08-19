@@ -21,7 +21,6 @@ body{
 
 #logo{
     height: 20%;
-    position: relative;
     text-align: center;
 }
 
@@ -84,6 +83,7 @@ input:hover{
 
 
 /* add mensage error */
+
 #numberPeople{
     position: relative;
 }
@@ -180,5 +180,60 @@ h3{
     color:hsl(183, 100%, 15%);
 }
 
+@media only screen and (max-width: 700px){
+    body{
+        position: absolute;
+        top:0;
+        left:0;
+        transform:translate(0, 0);
+    }
 
+    #container{
+        width:100vw ;
+        height: auto;
+        margin: 0px 50px;
+    }
 
+    #logo{
+        height: 20%;
+        text-align: center;
+        margin: 20px;
+    }
+    
+    #calculator{
+        padding:20px 30px;
+        display: block;
+    }
+    
+    #left{
+        width:100%;
+        padding-right:0px;
+        margin-bottom: 20px; 
+        gap: 20px;
+    }
+
+    #buttons div{
+        justify-content: space-around;
+
+    }
+
+    #rigth{
+        width:100%;
+        padding: 20px;
+    }
+
+    h3{
+        font-size: 30px;
+    }
+
+    #reset{
+        margin-top:30px ;
+    }
+
+}
+
+@media only screen and (max-width: 450px){
+    #container {
+        margin: 0px 0px ;
+    }
+}
