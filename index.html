@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tip-calculator-app-main</title>
+    <link type="icon/gift" rel="icon" href="./images/favicon-32x32.png">
+    <link type="text/css" rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div id="container">
+    <div id="logo">
+        <h2>SPLI</h2>
+        <h2>TTER</h2>
+    </div>
+    <div id="calculator">
+
+        <div id="left">
+            <div id="bill">
+                <label for="valor">Bill</label>
+                <input type="text" name="valor" id="valor" placeholder="0.00">
+            </div>
+            <div id="buttons">
+                <label id="select-tip">Select tip %</label>
+                <div>   
+                    <button class="tip">5%</button>
+                    <button class="tip">10%</button>
+                    <button class="tip">15%</button>
+                </div> 
+                <div>    
+                    <button class="tip">25%</button>
+                    <button class="tip">50%</button>
+                    <input id=custom type="text" placeholder="Custom" custom></input>
+                </div>
+            </div>
+
+            <div id="numberPeople">
+                <label for="number">Number of People</label>
+                <input type="text" name="number" id="people" placeholder="0">
+            </div>
+        </div>
+
+        <div id="rigth">
+            <div id="tipA">
+                <div>
+                    <p>Tip Amount </p>
+                    <small>/ person</small>
+                </div>
+                <div>
+                    <h3 id="h3tipA">$0.00</h3>
+                </div>
+            </div>
+            <div id="total">
+                <div>
+                    <p>Total </p>
+                    <small>/person</small>
+                </div>
+                <div>
+                    <h3 id="h3total">$0.00</h3>
+                </div>
+            </div>
+            <button id="reset" >RESET</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
