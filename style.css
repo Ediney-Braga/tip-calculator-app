@@ -82,6 +82,30 @@ input:hover{
     cursor: pointer;
 }
 
+
+/* add mensage error */
+#numberPeople{
+    position: relative;
+}
+#numberPeople p{
+    position: absolute;
+    top:0px;
+    right:0px;
+    visibility: hidden;
+}
+
+.msgError{
+    color: orangered;
+    font-size: 12px;
+    visibility: visible !important;
+}
+
+.inputError{
+    border: 2px solid orangered;
+}
+/* ------------------------------- */
+
+
 button{
     background-color: hsl(183, 100%, 15%);
     color:white;

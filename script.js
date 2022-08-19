@@ -31,8 +31,16 @@ function billFunction (){
 }
 
 function peopleFunction (){
-    peopleValue = parseFloat(people.value);
-    calcular();
+    const p = document.querySelector("p");
+    if (people.value < 1){
+        p.classList.add("msgError");
+        people.classList.add("inputError");
+    }else {
+        people.classList.add("inputError");
+        p.classList.remove("msgError");
+        peopleValue = parseFloat(people.value);
+        calcular();
+    }
 }
 
 function customFunction (){
@@ -59,9 +67,10 @@ function resetFunction (){
     total.innerText = "$0.00";
     bill.value = "";
     custom.value = "";
-    people.value = 1;
+    people.value = "";
     billValue = 0.00;
     peopleValue = "";
     customvalue = "";
     tipValue = 0.05;
 }
+

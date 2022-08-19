@@ -10,64 +10,62 @@
 </head>
 <body>
 
-<div id="container">
-    <div id="logo">
-        <h2>SPLI</h2>
-        <h2>TTER</h2>
-    </div>
-    <div id="calculator">
+    <div id="container">
+        <div id="logo">
+            <h2>SPLI</h2>
+            <h2>TTER</h2>
+        </div>
+        <div id="calculator">
 
-        <div id="left">
-            <div id="bill">
-                <label for="valor">Bill</label>
-                <input type="text" name="valor" id="valor" placeholder="0.00">
-            </div>
-            <div id="buttons">
-                <label id="select-tip">Select tip %</label>
-                <div>   
-                    <button class="tip">5%</button>
-                    <button class="tip">10%</button>
-                    <button class="tip">15%</button>
-                </div> 
-                <div>    
-                    <button class="tip">25%</button>
-                    <button class="tip">50%</button>
-                    <input id=custom type="text" placeholder="Custom" custom></input>
+            <div id="left">
+                <div id="bill">
+                    <label for="valor">Bill</label>
+                    <input type="text" name="valor" id="valor" placeholder="0.00">
+                </div>
+                <div id="buttons">
+                    <label id="select-tip">Select tip %</label>
+                    <div>   
+                        <button class="tip">5%</button>
+                        <button class="tip">10%</button>
+                        <button class="tip">15%</button>
+                    </div> 
+                    <div>    
+                        <button class="tip">25%</button>
+                        <button class="tip">50%</button>
+                        <input id=custom type="text" placeholder="Custom"></input>
+                    </div>
+                </div>
+
+                <div id="numberPeople">
+                    <label for="people">Number of People</label>
+                    <p> Can't be zero</p>
+                    <input type="text" name="people" id="people" value="1" >
                 </div>
             </div>
 
-            <div id="numberPeople">
-                <label for="number">Number of People</label>
-                <input type="text" name="number" id="people" placeholder="0">
+            <div id="rigth">
+                <div id="tipA">
+                    <div>
+                        <p>Tip Amount </p>
+                        <small>/ person</small>
+                    </div>
+                    <div>
+                        <h3 id="h3tipA">$0.00</h3>
+                    </div>
+                </div>
+                <div id="total">
+                    <div>
+                        <p>Total </p>
+                        <small>/person</small>
+                    </div>
+                    <div>
+                        <h3 id="h3total">$0.00</h3>
+                    </div>
+                </div>
+                <button id="reset" >RESET</button>
             </div>
         </div>
-
-        <div id="rigth">
-            <div id="tipA">
-                <div>
-                    <p>Tip Amount </p>
-                    <small>/ person</small>
-                </div>
-                <div>
-                    <h3 id="h3tipA">$0.00</h3>
-                </div>
-            </div>
-            <div id="total">
-                <div>
-                    <p>Total </p>
-                    <small>/person</small>
-                </div>
-                <div>
-                    <h3 id="h3total">$0.00</h3>
-                </div>
-            </div>
-            <button id="reset" >RESET</button>
-        </div>
     </div>
-</div>
-
-
-
 
     <script src="./script.js"></script>
 </body>
